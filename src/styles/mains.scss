@@ -1,52 +1,55 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+@charset "utf-8";
+@import "./include-media.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
 
-    h1 {
-        align-items: center;
-        border-bottom: turquoise 5px solid;
-        display: flex;
-        color: white;
-        justify-content: center;
-        width: 25%;
-    }
+// Atoms
+@import "./card.scss";
+
+// Components
+@import "./navbar.scss";
+@import "./header.scss";
+@import "./work.scss";
+@import "./about.scss";
+@import "./skills.scss";
+@import "./promotion.scss";
+@import "./footer.scss";
+
+* {
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 0px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
   }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  button {
-    font-size: calc(10px + 2vmin);
-  }
-  
+}
