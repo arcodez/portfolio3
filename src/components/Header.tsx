@@ -14,8 +14,12 @@ const Header = ({
   headerTagline,
   contactEmail,
 }: HeaderProps) => {
-
   const [darkmode, setDarkMode] = useState(false);
+  //create a function to setColor to a varible off css
+  const setColor = () => {
+    document.documentElement.style.setProperty("--color-text", "#fff");
+    document.documentElement.style.setProperty('--body-background', 'black');
+  };
 
   const handleClick = () => {
     if (darkmode) setDarkMode(false);
@@ -61,7 +65,7 @@ const Header = ({
             </a>
 
             <h2>The darkmode is {`${darkmode}`} now</h2>
-            <button onClick={handleClick}>Change Mode</button>
+            <button onClick={setColor}>Change Mode</button>
           </Fade>
         </i>
       </i>

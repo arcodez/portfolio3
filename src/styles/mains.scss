@@ -14,15 +14,25 @@
 @import "./promotion.scss";
 @import "./footer.scss";
 
+:root {
+  --color-text: black;
+  --btn-color-text: white;
+  --body-background: white;
+}
+
 * {
   font-family: "Montserrat";
 }
 
 body {
+  background-color: var(--body-background);
+  color: var(--color-text);
   margin: 0;
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* transition: background-color 1s ease-in;
+  transition: color 3s ease-in; */
 }
 
 .section {
@@ -44,7 +54,7 @@ body {
   margin: 10px;
   padding: 10px;
   background-color: black;
-  color: white;
+  color: var(--btn-color-text);
   border: 0px;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

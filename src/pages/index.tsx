@@ -6,19 +6,31 @@ import Work from "../components/Work";
 import About from "../components/about";
 import Skills from "../components/skills";
 import Promotion from "../components/Promotion";
-import Footer from "../components/Footer";
 import data from "../yourdata";
+import { useEffect } from "react";
 
-const IndexPage = () => (
-  <Layout>
-    {/* <SEO title="Portfolio /Template" /> */}
-    <Header {...data} />
-    <Work />
-    <About />
-    <Skills />
-    <Promotion />
-    <Footer />
-  </Layout>
-);
+const IndexPage = () => {
+  useEffect(() => {
+    const colorVar = () => {};
+  }, []);
+
+  //create a function to setColor to a varible off css
+  const setColor = () => {
+    document.documentElement.style.setProperty('--color-text', 'black');
+    document.documentElement.style.setProperty('--body-background', 'white');
+  };
+
+  return (
+    <Layout>
+      {/* <SEO title="Portfolio /Template" /> */}
+      <Header {...data} />
+      <button onClick={setColor}>Change color Text</button>
+      <Work />
+      <About />
+      <Skills />
+      <Promotion />
+    </Layout>
+  );
+};
 
 export default IndexPage;
