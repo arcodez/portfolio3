@@ -18,7 +18,8 @@
       background-color: transparent;
       outline: none;
       border: 0px;
-      cursor: pointer;
+      cursor: pointer; 
+      color: var(--color-text); 
       &:hover {
         opacity: 1;
       }

@@ -7,24 +7,56 @@ import About from "../components/about";
 import Skills from "../components/skills";
 import Promotion from "../components/Promotion";
 import data from "../yourdata";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const IndexPage = () => {
+  const [darkmode, setDarkMode] = useState(false);
+
   useEffect(() => {
-    const colorVar = () => {};
-  }, []);
+    handleThemeMode();
+  }, [darkmode]);
+
+  const handleThemeMode = () => {
+    if (darkmode) return setColorToLight();
+    if (!darkmode) return setColorToDark();
+  };
+
+  const handleThemeActive = () => {
+    if (darkmode) setDarkMode(false);
+    else setDarkMode(true);
+  };
+
+  const changesProperty = (property: string, value: string): void => {
+    document.documentElement.style.setProperty(property, value);
+  };
 
   //create a function to setColor to a varible off css
-  const setColor = () => {
-    document.documentElement.style.setProperty('--color-text', 'black');
-    document.documentElement.style.setProperty('--body-background', 'white');
+  const setColorToLight = () => {
+    changesProperty("--color-text", "black");
+    changesProperty("--body-background", "white");
+  };
+
+  const setColorToDark = () => {
+    changesProperty("--color-text", "#fff");
+    changesProperty("--body-background", "black");
   };
 
   return (
     <Layout>
-      {/* <SEO title="Portfolio /Template" /> */}
       <Header {...data} />
-      <button onClick={setColor}>Change color Text</button>
+      <br />
+      <h2 style={{ textAlign: "center" }}>the dark mode is {`${darkmode}`}</h2>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "0 auto",
+        }}
+      >
+        <button onClick={handleThemeActive}>Change Theme mode</button>
+      </div>
+
       <Work />
       <About />
       <Skills />

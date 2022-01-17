@@ -1,5 +1,5 @@
-import React from "react"
-import data from "../yourdata"
+import React from "react";
+import data from "../yourdata";
 
 const Skills = () => {
   return (
@@ -10,7 +10,8 @@ const Skills = () => {
           <i className="skills-grid">
             {data.skills.map((skill, index) => (
               <i className="skill" key={index}>
-                <img src={skill.img} alt="css"></img>
+                {/* <img src={skill.img} alt="css"></img> */}
+                <i className={skill.img + " skill_icon"}></i>
                 <p>{skill.para}</p>
               </i>
             ))}
@@ -18,7 +19,7 @@ const Skills = () => {
         </i>
       </i>
     </i>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

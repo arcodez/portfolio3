@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Fade from "react-reveal/Fade";
 
 type HeaderProps = {
@@ -14,18 +13,6 @@ const Header = ({
   headerTagline,
   contactEmail,
 }: HeaderProps) => {
-  const [darkmode, setDarkMode] = useState(false);
-  //create a function to setColor to a varible off css
-  const setColor = () => {
-    document.documentElement.style.setProperty("--color-text", "#fff");
-    document.documentElement.style.setProperty('--body-background', 'black');
-  };
-
-  const handleClick = () => {
-    if (darkmode) setDarkMode(false);
-    else setDarkMode(true);
-  };
-
   return (
     <i className="section" id="home">
       <i className="container">
@@ -63,9 +50,6 @@ const Header = ({
             >
               CONNECT WITH ME
             </a>
-
-            <h2>The darkmode is {`${darkmode}`} now</h2>
-            <button onClick={setColor}>Change Mode</button>
           </Fade>
         </i>
       </i>
