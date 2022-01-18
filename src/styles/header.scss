@@ -54,3 +54,18 @@
     }
   }
 }
+
+$theme-items-size: 70px;
+
+.theme_change {
+  margin: 10px 0;
+  font-size: $theme-items-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ img {
+   width: $theme-items-size;
+ }
+
+}
