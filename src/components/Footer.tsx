@@ -1,4 +1,3 @@
-import React from "react"
 import Fade from "react-reveal/Fade"
 import data from "../yourdata"
 
@@ -33,7 +32,7 @@ const Footer = ({}) => {
           </i>
           <span>
             Made With <i>❤</i> by
-            <a href="https://www.chetanverma.com/">Chetan Verma</a>
+            <a href="#"> Abel Rodriguez</a>
           </span>
         </i>
       </i>

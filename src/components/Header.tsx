@@ -18,13 +18,7 @@ const Header = ({
       <i className="container">
         <i className="header-wrapper">
           <Fade bottom>
-            <h2>
-              Hi, I'm {name} and this is my website.
-              {" " + new Date().getTimezoneOffset() + " "}
-              <span role="img" aria-label="Emoji">
-                ( emoji )
-              </span>
-            </h2>
+            <h2>Hi, I'm {name} and this is my website.</h2>
           </Fade>
           <Fade bottom cascade>
             <i className="heading-wrapper">
