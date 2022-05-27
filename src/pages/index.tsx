@@ -7,35 +7,15 @@ import Skills from "../components/skills";
 import Promotion from "../components/Promotion";
 import data from "../yourdata";
 import useDarkMode from "../hooks/useDarkMode";
+import ThemeChanger from "../components/ThemeChanger";
 
 const IndexPage = () => {
-  const { darkmode, handleThemeActive } = useDarkMode();
-
   return (
     <Layout>
       <Header {...data} />
       <br />
       {/* <h2 style={{ textAlign: "center" }}>the dark mode is {`${darkmode}`}</h2> */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "0 auto",
-        }}
-      >
-        <div className="theme_change">
-          <i onClick={handleThemeActive} className={`fas fa-toggle-${darkmode ? "on" : "off"} theme_btn`}></i>
-
-          {darkmode ? (
-            <img src="https://bordados.vercel.app/sun.svg" alt="" />
-          ) : (
-            <img src="https://bordados.vercel.app/moon.svg" alt="" />
-          )}
-
-        </div>
-      </div>
-
+      <ThemeChanger />
       <Work />
       <About />
       <Skills />

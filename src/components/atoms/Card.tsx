@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
   return (
@@ -20,11 +20,19 @@ const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
           rel="noopener noreferrer"
           className="btn"
         >
-          Explore
+          Code
+        </a>{" "}
+        <a
+          href={projectLink ? projectLink : "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn"
+        >
+          Visit
         </a>
       </i>
     </i>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

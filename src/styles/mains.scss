@@ -35,6 +35,12 @@ body {
   transition: color 3s ease-in; */
 }
 
+a {
+  color: white;
+  list-style: none;
+  color: var(--color-text);
+}
+
 .section {
   width: 100vw;
   height: auto;

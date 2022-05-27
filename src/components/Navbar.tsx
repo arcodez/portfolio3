@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ThemeChanger from "./ThemeChanger";
 
 const Navbar = () => {
   return (
@@ -11,12 +13,13 @@ const Navbar = () => {
             className="name"
             tabIndex={0}
           >
-            Portfolio.
+            <Link to="/">Portfolio.</Link>
           </i>
           <i className="links-wrapper">
             <button>Work</button>
             <button>About</button>
             <button>Contact</button>
+            <ThemeChanger />
           </i>
         </i>
       </i>

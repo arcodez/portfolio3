@@ -1,10 +1,13 @@
-import React from "react"
-import Card from "./atoms/Card"
-import Fade from "react-reveal/Fade"
-
-import data from "../yourdata"
+import React from "react";
+import Card from "./atoms/Card";
+import Fade from "react-reveal/Fade";
+import "./Works.scss";
+import data from "../yourdata";
+import { Navigate, useNavigate } from "react-router-dom";
+import ListofCards from "./ListofCards";
 
 const Work = () => {
+  const navigate = useNavigate();
   return (
     <i className="section" id="work">
       <i className="container">
@@ -13,23 +16,15 @@ const Work = () => {
             <h1>Work</h1>
           </Fade>
 
-          <i className="grid">
-            <Fade bottom cascade>
-              {data.projects.map((project, index) => (
-                <Card
-                  key={index}
-                  heading={project.title}
-                  paragraph={project.para}
-                  imgUrl={project.imageSrc}
-                  projectLink={project.url}
-                ></Card>
-              ))}
-            </Fade>
-          </i>
+          <ListofCards />
+
+          <button onClick={() => navigate("/projects")}>
+            Show More Projects
+          </button>
         </i>
       </i>
     </i>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
