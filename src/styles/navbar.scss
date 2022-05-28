@@ -8,6 +8,7 @@
     font-weight: 600;
   }
   .links-wrapper {
+    display: flex;
     button {
       text-decoration: none;
       padding: 10px;
@@ -18,8 +19,8 @@
       background-color: transparent;
       outline: none;
       border: 0px;
-      cursor: pointer; 
-      color: var(--color-text); 
+      cursor: pointer;
+      color: var(--color-text);
       &:hover {
         opacity: 1;
       }

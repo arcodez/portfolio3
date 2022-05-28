@@ -15,7 +15,6 @@ const IndexPage = () => {
       <Header {...data} />
       <br />
       {/* <h2 style={{ textAlign: "center" }}>the dark mode is {`${darkmode}`}</h2> */}
-      <ThemeChanger />
       <Work />
       <About />
       <Skills />

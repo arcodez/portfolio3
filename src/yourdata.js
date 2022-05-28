@@ -1,10 +1,10 @@
 // Skills Icons
 
 // Social Icon
-import githubIcon from "./images/github.svg"
-import codepenIcon from "./images/codepen.svg"
-import dribbbleIcon from "./images/dribbble.svg"
-import instagramIcon from "./images/instagram.svg"
+import githubIcon from "./images/github.svg";
+import codepenIcon from "./images/codepen.svg";
+import dribbbleIcon from "./images/dribbble.svg";
+import instagramIcon from "./images/instagram.svg";
 
 export default {
   //(Please Do Not Remove The comma(,) after every variable)
@@ -32,64 +32,56 @@ export default {
   // Work Section ------------------------
   projects: [
     {
-      title: "Project One", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Custom Clothing Store ", //Project Title - Add Your Project Title Here
+      para: "Entrepreneurship of clothing and personalized products at the best price and of good quality", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc:
-        "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        "https://http2.mlstatic.com/D_NQ_NP_919005-MCO44760313405_012021-O.jpg",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://bordados.vercel.app/",
     },
     {
-      title: "Project Two", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Marketplace Art Nft", //Project Title - Add Your Project Title Here
+      para: "A frontend nft art store", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc:
-        "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+        "https://ar.vogue.me/image_provider/?w=750&h=&zc=1&q=90&cc=ffffff&src=https://en.vogue.me/wp-content/uploads/2022/02/Yuga-Labs-Bored-Ape-Yacht-Club-8817-2021-e1645443955844.jpg",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://marketplace-art-nft-react.vercel.app/",
     },
     {
-      title: "Project Three", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Music Store", //Project Title - Add Your Project Title Here
+      para: "A song store with admin panel", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      imageSrc: "https://i.blogs.es/00bd0f/apple-music-note/450_1000.jpg",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://musicstore-git-master-arcodez.vercel.app/#home",
     },
     {
-      title: "Project Four", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Animal Betting Center", //Project Title - Add Your Project Title Here
+      para: "A bank to bet on multiple lotteries and see the results of the animals", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc:
-        "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        "https://scontent-mia3-2.xx.fbcdn.net/v/t1.6435-9/49759013_2032381563483636_1560682379679367168_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=chWh8-nHCEMAX8Uljgb&_nc_ht=scontent-mia3-2.xx&oh=00_AT8s0hh-lxSlgrgsOakuMvjoRI5Sw12JXn5so1VtUVQIUw&oe=62B79641",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://digital-animals.vercel.app/",
     },
     {
-      title: "Project Five", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Gif App", //Project Title - Add Your Project Title Here
+      para: "One app to search gif using Gif Api", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      imageSrc: "https://i.gifer.com/3doZ.gif",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://gif-app-gamma.vercel.app/",
     },
     {
-      title: "Project Six", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+      title: "Donation Page", //Project Title - Add Your Project Title Here
+      para: "A Donation Page using Paypal Button Api and Youtube Tutorial", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       imageSrc:
-        "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
+        "https://contactcenterhub.es/wp-content/uploads/2022/03/muhammad-asyfaul-f2tNsobMisQ-unsplash-696x522.jpg.webp",
       //Project URL - Add Your Project Url Here
-      url: "http://chetanverma.com/",
+      url: "https://portfolio-arcodez.vercel.app/donation",
     },
 
     /*
@@ -124,33 +116,27 @@ export default {
   skills: [
     {
       img: "fab fa-html5",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
     {
       img: "fab fa-css3-alt",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
     {
       img: "fab fa-js-square",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
     {
       img: "fab fa-react",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
     {
       img: "fas fa-pencil-ruler",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
     {
       img: "fas fa-code",
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
     },
   ],
 
@@ -184,6 +170,6 @@ export default {
   ],
 
   // End Contact Section ---------------
-}
+};
 
 // Thanks for using this template, I would love to hear from you contact me at hello@chetanverma.com

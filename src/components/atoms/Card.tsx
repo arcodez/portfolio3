@@ -1,4 +1,5 @@
 import React from "react";
+import "./card.scss";
 
 const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
   return (

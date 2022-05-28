@@ -13,12 +13,18 @@ const Navbar = () => {
             className="name"
             tabIndex={0}
           >
-            <Link to="/">Portfolio.</Link>
+            <Link to="/">Abel Rodriguez.</Link>
           </i>
           <i className="links-wrapper">
-            <button>Work</button>
-            <button>About</button>
-            <button>Contact</button>
+            <Link to={"/#work"}>
+              <button>Work</button>
+            </Link>
+            <Link to={"/#about"}>
+              <button>About</button>
+            </Link>
+            <Link to={"#contact"}>
+              <button>Contact</button>
+            </Link>
             <ThemeChanger />
           </i>
         </i>

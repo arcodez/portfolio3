@@ -10,19 +10,13 @@ const Work = () => {
   const navigate = useNavigate();
   return (
     <i className="section" id="work">
-      <i className="container">
-        <i className="work-wrapper">
-          <Fade bottom>
-            <h1>Work</h1>
-          </Fade>
+      <Fade bottom>
+        <h1>Work</h1>
+      </Fade>
 
-          <ListofCards />
+      <ListofCards />
 
-          <button onClick={() => navigate("/projects")}>
-            Show More Projects
-          </button>
-        </i>
-      </i>
+      <button onClick={() => navigate("/projects")}>Show More Projects</button>
     </i>
   );
 };

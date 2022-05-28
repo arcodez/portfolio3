@@ -3,16 +3,10 @@ import Fade from "react-reveal/Fade";
 type HeaderProps = {
   name: string;
   headerParagraph: string;
-  headerTagline: string[];
   contactEmail: string;
 };
 
-const Header = ({
-  name,
-  headerParagraph,
-  headerTagline,
-  contactEmail,
-}: HeaderProps) => {
+const Header = ({ name, headerParagraph, contactEmail }: HeaderProps) => {
   return (
     <i className="section" id="home">
       <i className="container">
@@ -22,14 +16,9 @@ const Header = ({
           </Fade>
           <Fade bottom cascade>
             <i className="heading-wrapper">
-              <h1>
-                {headerTagline[0] ? headerTagline[0] : "Building digital"}
-              </h1>
-              <h1>
-                {" "}
-                {headerTagline[1] ? headerTagline[1] : "products, brands"}
-              </h1>
-              <h1> {headerTagline[2] ? headerTagline[2] : "and experience"}</h1>
+              <h1>{"Building digital"}</h1>
+              <h1> {"products, brands"}</h1>
+              <h1> {"and experience"}</h1>
             </i>
           </Fade>
           <Fade bottom>

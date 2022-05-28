@@ -1,11 +1,12 @@
-import Fade from "react-reveal/Fade"
-import data from "../yourdata"
+import Fade from "react-reveal/Fade";
+import data from "../yourdata";
 
-type FooterProps = {	
-  contactSubHeading: string,
+type FooterProps = {
+  contactSubHeading: string;
   contactEmail: string;
   social: [];
-}
+};
+
 const Footer = ({}) => {
   return (
     <i className="section" id="contact">
@@ -37,7 +38,7 @@ const Footer = ({}) => {
         </i>
       </i>
     </i>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
